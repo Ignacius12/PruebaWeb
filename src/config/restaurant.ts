@@ -43,7 +43,7 @@ export const restaurant: RestaurantConfig = {
     title: 'Casa Oliva | Restaurante mediterráneo en Madrid',
     description:
       'Casa Oliva: cocina mediterránea de producto en Madrid. Consulta el menú, reserva mesa y descubre nuestra cocina de temporada.',
-    canonical: 'https://example.github.io/casa-oliva/',
+    canonical: 'https://ignacius12.github.io/PruebaWeb/',
     ogImage:
       'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop',
   },
