@@ -35,6 +35,7 @@ export interface BakeryConfig {
     name: string
     description: string
     price: string
+    image: { src: string; alt: string; width: number; height: number }
   }[]
   specialties: {
     id: string
@@ -121,36 +122,72 @@ export const bakery: BakeryConfig = {
       name: 'Barra de pueblo',
       description: 'Corteza crujiente y miga alveolada',
       price: '1,40 €',
+      image: {
+        src: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=1000&q=80&auto=format&fit=crop',
+        alt: 'Barra de pan rústica recién horneada',
+        width: 1000,
+        height: 750,
+      },
     },
     {
       id: 'masa-madre',
       name: 'Hogaza de masa madre',
       description: 'Fermentación lenta de 18 horas',
       price: '3,80 €',
+      image: {
+        src: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1000&q=80&auto=format&fit=crop',
+        alt: 'Hogaza de masa madre sobre madera',
+        width: 1000,
+        height: 750,
+      },
     },
     {
       id: 'integral',
       name: 'Pan integral de espelta',
       description: 'Con semillas tostadas',
       price: '3,20 €',
+      image: {
+        src: 'https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=1000&q=80&auto=format&fit=crop',
+        alt: 'Pan integral con semillas en cesta',
+        width: 1000,
+        height: 750,
+      },
     },
     {
       id: 'croissant',
       name: 'Croissant de mantequilla',
       description: 'Hojaldre laminado a mano',
       price: '1,60 €',
+      image: {
+        src: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1000&q=80&auto=format&fit=crop',
+        alt: 'Croissants de mantequilla en el mostrador',
+        width: 1000,
+        height: 750,
+      },
     },
     {
       id: 'ensaimada',
       name: 'Ensaimada',
       description: 'Clásica o rellena de cabello de ángel',
       price: '2,40 €',
+      image: {
+        src: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1000&q=80&auto=format&fit=crop',
+        alt: 'Bollería dulce artesanal',
+        width: 1000,
+        height: 750,
+      },
     },
     {
       id: 'empanada',
       name: 'Empanada gallega',
       description: 'Del día · atún o carne',
       price: '2,90 €',
+      image: {
+        src: 'https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1000&q=80&auto=format&fit=crop',
+        alt: 'Mostrador de panadería con productos del día',
+        width: 1000,
+        height: 750,
+      },
     },
   ],
   specialties: [
