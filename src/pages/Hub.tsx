@@ -11,7 +11,7 @@ const demos = [
     image:
       'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop',
     imageAlt: 'Mesa de restaurante con platos mediterráneos',
-    accent: 'restaurant',
+    accent: 'restaurant' as const,
   },
   {
     to: '/clinica',
@@ -22,9 +22,32 @@ const demos = [
     image:
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&auto=format&fit=crop',
     imageAlt: 'Recepción luminosa de clínica dental moderna',
-    accent: 'clinic',
+    accent: 'clinic' as const,
   },
-] as const
+  {
+    to: '/horno',
+    label: 'Horno / panadería',
+    name: 'Horno La Espiga',
+    description:
+      'Web tradicional y apetecible para un horno de barrio: panes del día, encargos y ubicación.',
+    image:
+      'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80&auto=format&fit=crop',
+    imageAlt: 'Panes artesanos recién horneados',
+    accent: 'bakery' as const,
+  },
+]
+
+const accentText = {
+  restaurant: 'text-[#4f5d32]',
+  clinic: 'text-[#1f5c63]',
+  bakery: 'text-[#6b4226]',
+}
+
+const accentBtn = {
+  restaurant: 'bg-[#4f5d32] hover:bg-[#3d4926]',
+  clinic: 'bg-[#1f5c63] hover:bg-[#17484e]',
+  bakery: 'bg-[#6b4226] hover:bg-[#4a2e1a]',
+}
 
 export function Hub() {
   useEffect(() => {
@@ -50,11 +73,11 @@ export function Hub() {
           Elige una web de ejemplo
         </h1>
         <p className="mt-5 max-w-xl text-base text-[#5c645e] md:text-lg">
-          Dos demos comerciales listas para enseñar a clientes. Misma base
+          Tres demos comerciales listas para enseñar a clientes. Misma base
           técnica, estética y conversión adaptadas a cada negocio.
         </p>
 
-        <div className="mt-12 grid gap-10 md:mt-16 md:grid-cols-2 md:gap-8">
+        <div className="mt-12 grid gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {demos.map((demo) => (
             <article key={demo.to} className="group flex flex-col">
               <Link
@@ -71,11 +94,7 @@ export function Hub() {
                 />
               </Link>
               <p
-                className={`mt-5 text-xs font-medium uppercase tracking-[0.16em] ${
-                  demo.accent === 'restaurant'
-                    ? 'text-[#4f5d32]'
-                    : 'text-[#1f5c63]'
-                }`}
+                className={`mt-5 text-xs font-medium uppercase tracking-[0.16em] ${accentText[demo.accent]}`}
               >
                 {demo.label}
               </p>
@@ -85,11 +104,7 @@ export function Hub() {
               <p className="mt-3 flex-1 text-[#5c645e]">{demo.description}</p>
               <Link
                 to={demo.to}
-                className={`mt-6 inline-flex min-h-12 items-center justify-center px-6 text-sm font-medium text-white transition-colors ${
-                  demo.accent === 'restaurant'
-                    ? 'bg-[#4f5d32] hover:bg-[#3d4926]'
-                    : 'bg-[#1f5c63] hover:bg-[#17484e]'
-                }`}
+                className={`mt-6 inline-flex min-h-12 items-center justify-center px-6 text-sm font-medium text-white transition-colors ${accentBtn[demo.accent]}`}
               >
                 Ver demo
               </Link>
