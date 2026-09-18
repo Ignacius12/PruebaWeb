@@ -23,10 +23,10 @@ export function ClinicHeader() {
             : 'border-transparent bg-clinic-ice/90 backdrop-blur-sm'
         }`}
       >
-        <div className="clinic-container flex h-16 items-center justify-between gap-3 md:h-[4.25rem]">
+        <div className="clinic-container flex h-[4.25rem] items-center justify-between gap-3 md:h-[4.75rem]">
           <a
             href="#inicio"
-            className="font-sans text-[1.05rem] font-medium tracking-tight text-clinic-ink sm:text-[1.15rem]"
+            className="font-sans text-[1.35rem] font-semibold tracking-tight text-clinic-ink sm:text-[1.55rem] md:text-[1.7rem]"
           >
             {clinic.name}
           </a>
@@ -44,7 +44,7 @@ export function ClinicHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="#cita" className="rounded-full px-3.5 text-sm sm:px-5">
+            <Button href="#cita" className="px-3.5 text-sm sm:px-5">
               Pedir cita
             </Button>
             <button
@@ -127,7 +127,7 @@ function ClinicMobileMenu({
           ))}
         </nav>
         <div className="mt-auto pt-8">
-          <Button href={`tel:${clinic.phone.tel}`} className="w-full rounded-full" onClick={onClose}>
+          <Button href={`tel:${clinic.phone.tel}`} className="w-full" onClick={onClose}>
             Pedir cita
           </Button>
         </div>

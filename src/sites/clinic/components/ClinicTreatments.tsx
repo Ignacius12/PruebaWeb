@@ -26,7 +26,7 @@ export function ClinicTreatments() {
           {clinic.treatments.map((item) => (
             <li
               key={item.id}
-              className="rounded-2xl border border-clinic-line bg-clinic-ice/70 px-5 py-6"
+              className="border border-clinic-line bg-clinic-ice/70 px-5 py-6"
             >
               <h3 className="text-[1.05rem] font-medium text-clinic-ink">{item.name}</h3>
               <p className="mt-2 text-sm leading-relaxed text-clinic-ink-soft">

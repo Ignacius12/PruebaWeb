@@ -27,14 +27,14 @@ export function ClinicHero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button href="#cita" size="lg" className="w-full rounded-full sm:w-auto">
+            <Button href="#cita" size="lg" className="w-full sm:w-auto">
               Pedir cita
             </Button>
             <Button
               href="#tratamientos"
               variant="secondary"
               size="lg"
-              className="w-full rounded-full sm:w-auto"
+              className="w-full sm:w-auto"
             >
               Ver tratamientos
             </Button>
@@ -54,7 +54,7 @@ export function ClinicHero() {
         </div>
 
         <div className="order-1 md:order-2 md:col-span-7">
-          <figure className="overflow-hidden rounded-[1.25rem] bg-clinic-mint">
+          <figure className="overflow-hidden bg-clinic-mint">
             <img
               src={hero.image.src}
               alt={hero.image.alt}

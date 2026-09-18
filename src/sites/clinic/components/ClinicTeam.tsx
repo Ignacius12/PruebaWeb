@@ -22,7 +22,7 @@ export function ClinicTeam() {
                 height={750}
                 loading="lazy"
                 decoding="async"
-                className="aspect-[4/5] w-full rounded-2xl object-cover"
+                className="aspect-[4/5] w-full object-cover"
               />
               <h3 className="mt-4 text-lg font-medium text-clinic-ink">{member.name}</h3>
               <p className="mt-1 text-sm text-clinic-muted">{member.role}</p>

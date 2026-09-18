@@ -22,7 +22,7 @@ export function ClinicAppointment() {
             {clinic.phone.display}
           </a>
           <div className="mt-6">
-            <Button href={`tel:${clinic.phone.tel}`} size="lg" className="gap-2 rounded-full">
+            <Button href={`tel:${clinic.phone.tel}`} size="lg" className="gap-2">
               <Phone size={18} aria-hidden />
               Llamar ahora
             </Button>
