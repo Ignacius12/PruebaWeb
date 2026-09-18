@@ -1,36 +1,37 @@
-import { About } from './components/About'
-import { Footer } from './components/Footer'
-import { Gallery } from './components/Gallery'
-import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { JsonLd } from './components/JsonLd'
-import { LegalNotes } from './components/LegalNotes'
-import { Location } from './components/Location'
-import { MenuSection } from './components/MenuSection'
-import { Reservations } from './components/Reservations'
-import { TrustBar } from './components/TrustBar'
+import { useEffect } from 'react'
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Hub } from './pages/Hub'
+import { ClinicApp } from './sites/clinic/ClinicApp'
+import { RestaurantApp } from './sites/restaurant/RestaurantApp'
 
-function App() {
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
+function AppRoutes() {
   return (
     <>
-      <JsonLd />
-      <a href="#menu" className="skip-link">
-        Saltar al menú
-      </a>
-      <Header />
-      <main id="contenido-principal">
-        <Hero />
-        <TrustBar />
-        <About />
-        <MenuSection />
-        <Gallery />
-        <Reservations />
-        <Location />
-        <LegalNotes />
-      </main>
-      <Footer />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Hub />} />
+        <Route path="/restaurante" element={<RestaurantApp />} />
+        <Route path="/clinica" element={<ClinicApp />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+export default function App() {
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+
+  return (
+    <BrowserRouter basename={basename === '/' ? undefined : basename}>
+      <AppRoutes />
+    </BrowserRouter>
+  )
+}
