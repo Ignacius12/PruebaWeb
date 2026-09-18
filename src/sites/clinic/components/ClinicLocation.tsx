@@ -30,7 +30,7 @@ export function ClinicLocation() {
               variant="secondary"
               target="_blank"
               rel="noopener noreferrer"
-              className="gap-2"
+              className="gap-2 rounded-full"
             >
               <Navigation size={16} aria-hidden />
               Cómo llegar

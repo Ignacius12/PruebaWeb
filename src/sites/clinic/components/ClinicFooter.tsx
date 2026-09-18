@@ -1,14 +1,14 @@
 import { clinic } from '../config'
 
 export function ClinicFooter() {
-  const { address, hours, name, phone, shortName, footerLinks, legalLinks } = clinic
+  const { address, hours, name, phone, footerLinks, legalLinks } = clinic
   const fullAddress = `${address.street}, ${address.postalCode} ${address.city}`
 
   return (
     <footer className="border-t border-clinic-line bg-clinic-ink text-white">
       <div className="clinic-container grid gap-10 py-14 md:grid-cols-12 md:gap-8 md:py-16">
         <div className="md:col-span-4">
-          <p className="display text-2xl tracking-[0.06em]">{shortName}</p>
+          <p className="font-sans text-xl font-medium tracking-tight">{clinic.name}</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">{clinic.description}</p>
         </div>
         <div className="md:col-span-3">

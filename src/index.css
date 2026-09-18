@@ -16,13 +16,14 @@
   --color-line: #d9d3c6;
   --color-white: #fffcf7;
 
-  --color-clinic: #2f6f7e;
-  --color-clinic-deep: #245864;
-  --color-clinic-ice: #f4f7f8;
-  --color-clinic-ink: #1a2226;
-  --color-clinic-ink-soft: #3a454b;
-  --color-clinic-muted: #66757c;
-  --color-clinic-line: #d5dee2;
+  --color-clinic: #1f5c63;
+  --color-clinic-deep: #17484e;
+  --color-clinic-ice: #f7faf9;
+  --color-clinic-ink: #152428;
+  --color-clinic-ink-soft: #3d4a4e;
+  --color-clinic-muted: #6a787c;
+  --color-clinic-line: #dce6e4;
+  --color-clinic-mint: #e7f2ef;
 
   --shadow-soft: 0 12px 40px rgb(26 25 22 / 0.08);
 }

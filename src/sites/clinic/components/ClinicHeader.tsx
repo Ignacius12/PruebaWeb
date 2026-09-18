@@ -26,9 +26,9 @@ export function ClinicHeader() {
         <div className="clinic-container flex h-16 items-center justify-between gap-3 md:h-[4.25rem]">
           <a
             href="#inicio"
-            className="display text-[1.15rem] tracking-[0.06em] text-clinic-ink sm:text-[1.3rem]"
+            className="font-sans text-[1.05rem] font-medium tracking-tight text-clinic-ink sm:text-[1.15rem]"
           >
-            {clinic.shortName}
+            {clinic.name}
           </a>
 
           <nav aria-label="Navegación principal" className="hidden items-center gap-6 lg:flex">
@@ -44,7 +44,7 @@ export function ClinicHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="#cita" className="px-3.5 text-sm sm:px-5">
+            <Button href="#cita" className="rounded-full px-3.5 text-sm sm:px-5">
               Pedir cita
             </Button>
             <button
@@ -101,8 +101,8 @@ function ClinicMobileMenu({
         className="absolute inset-y-0 right-0 flex w-[min(100%,20.5rem)] flex-col bg-clinic-ice px-6 pb-8 pt-5"
       >
         <div className="mb-8 flex items-center justify-between">
-          <p id={titleId} className="display text-xl tracking-[0.06em]">
-            {clinic.shortName}
+          <p id={titleId} className="font-sans text-lg font-medium tracking-tight">
+            {clinic.name}
           </p>
           <button
             ref={closeRef}
@@ -127,7 +127,7 @@ function ClinicMobileMenu({
           ))}
         </nav>
         <div className="mt-auto pt-8">
-          <Button href={`tel:${clinic.phone.tel}`} className="w-full" onClick={onClose}>
+          <Button href={`tel:${clinic.phone.tel}`} className="w-full rounded-full" onClick={onClose}>
             Pedir cita
           </Button>
         </div>

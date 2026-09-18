@@ -13,7 +13,7 @@ export function ClinicAbout() {
             height={about.image.height}
             loading="lazy"
             decoding="async"
-            className="aspect-[4/5] w-full object-cover"
+            className="aspect-[4/5] w-full rounded-2xl object-cover"
           />
         </div>
         <div className="md:col-span-7 md:order-1">

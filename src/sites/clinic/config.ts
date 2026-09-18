@@ -50,8 +50,8 @@ export interface ClinicConfig {
 
 export const clinic: ClinicConfig = {
   name: 'Clínica Alba',
-  shortName: 'CLÍNICA ALBA',
-  tagline: 'Odontología cercana, precisa y sin prisas.',
+  shortName: 'Clínica Alba',
+  tagline: 'Cuidado dental calmado, claro y humano.',
   description:
     'Clínica dental en Madrid orientada al cuidado preventivo, la estética natural y una experiencia tranquila para cada paciente.',
   phone: {
@@ -85,12 +85,12 @@ export const clinic: ClinicConfig = {
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&auto=format&fit=crop',
   },
   hero: {
-    title: 'Odontología cercana, precisa y sin prisas.',
+    title: 'Tu sonrisa, con calma y criterio.',
     subtitle:
-      'Escuchamos, explicamos y cuidamos tu sonrisa con un enfoque preventivo y un trato humano.',
+      'Un espacio luminoso en el centro de Madrid para escucharte, explicarte cada paso y cuidar tu salud bucal sin prisas.',
     image: {
-      src: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=1600&q=80&auto=format&fit=crop',
-      alt: 'Consulta dental moderna y luminosa',
+      src: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80&auto=format&fit=crop',
+      alt: 'Recepción e interior luminoso de una clínica dental moderna',
       width: 1600,
       height: 1067,
     },
@@ -102,8 +102,8 @@ export const clinic: ClinicConfig = {
       'Trabajamos con protocolos actuales, materiales de calidad y un ritmo que respeta tu tiempo y tu comodidad.',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1629909615184-74f495363b67?w=1200&q=80&auto=format&fit=crop',
-      alt: 'Profesional sanitario en ambiente clínico limpio',
+      src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80&auto=format&fit=crop',
+      alt: 'Pasillo luminoso de clínica con acabados limpios y contemporáneos',
       width: 1200,
       height: 1500,
     },

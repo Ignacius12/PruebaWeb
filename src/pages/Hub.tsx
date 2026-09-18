@@ -21,7 +21,7 @@ const demos = [
       'Web limpia y profesional para una clínica dental: tratamientos, confianza y cita por teléfono.',
     image:
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&auto=format&fit=crop',
-    imageAlt: 'Interior luminoso de clínica dental moderna',
+    imageAlt: 'Recepción luminosa de clínica dental moderna',
     accent: 'clinic',
   },
 ] as const
@@ -74,7 +74,7 @@ export function Hub() {
                 className={`mt-5 text-xs font-medium uppercase tracking-[0.16em] ${
                   demo.accent === 'restaurant'
                     ? 'text-[#4f5d32]'
-                    : 'text-[#2f6f7e]'
+                    : 'text-[#1f5c63]'
                 }`}
               >
                 {demo.label}
@@ -88,7 +88,7 @@ export function Hub() {
                 className={`mt-6 inline-flex min-h-12 items-center justify-center px-6 text-sm font-medium text-white transition-colors ${
                   demo.accent === 'restaurant'
                     ? 'bg-[#4f5d32] hover:bg-[#3d4926]'
-                    : 'bg-[#2f6f7e] hover:bg-[#245864]'
+                    : 'bg-[#1f5c63] hover:bg-[#17484e]'
                 }`}
               >
                 Ver demo
