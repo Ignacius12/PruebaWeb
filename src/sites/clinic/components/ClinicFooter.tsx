@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { clinic } from '../config'
 
 export function ClinicFooter() {
@@ -50,10 +49,7 @@ export function ClinicFooter() {
       <div className="border-t border-white/10">
         <div className="clinic-container flex flex-col gap-4 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {name}. Demo comercial.{' '}
-            <Link to="/" className="underline-offset-2 hover:text-white/80 hover:underline">
-              Todas las demos
-            </Link>
+            © {new Date().getFullYear()} {name}. Demo comercial.
           </p>
           <ul className="flex flex-wrap gap-x-5 gap-y-2">
             {legalLinks.map((link) => (

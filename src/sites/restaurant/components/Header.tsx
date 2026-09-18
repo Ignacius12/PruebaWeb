@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Menu } from 'lucide-react'
-import { Link } from 'react-router-dom'
 import { restaurant } from '../config/restaurant'
 import { MobileMenu } from './MobileMenu'
 import { Button } from './ui/Button'
@@ -26,21 +25,13 @@ export function Header() {
         }`}
       >
         <div className="container-page flex h-16 items-center justify-between gap-4 md:h-[4.25rem]">
-          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-            <Link
-              to="/"
-              className="hidden text-xs text-muted transition-colors hover:text-olive sm:inline"
-            >
-              Todas las demos
-            </Link>
-            <a
-              href="#inicio"
-              className="display truncate text-[1.2rem] tracking-[0.08em] text-ink sm:text-[1.35rem] md:text-[1.5rem]"
-              aria-label={`${restaurant.name} — inicio`}
-            >
-              {restaurant.shortName}
-            </a>
-          </div>
+          <a
+            href="#inicio"
+            className="display text-[1.35rem] tracking-[0.08em] text-ink md:text-[1.5rem]"
+            aria-label={`${restaurant.name} — inicio`}
+          >
+            {restaurant.shortName}
+          </a>
 
           <nav
             aria-label="Navegación principal"

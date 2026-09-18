@@ -1,6 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { Link } from 'react-router-dom'
 import { clinic } from '../config'
 import { Button } from './Button'
 
@@ -25,20 +24,12 @@ export function ClinicHeader() {
         }`}
       >
         <div className="clinic-container flex h-16 items-center justify-between gap-3 md:h-[4.25rem]">
-          <div className="flex min-w-0 items-center gap-3">
-            <Link
-              to="/"
-              className="hidden text-xs text-clinic-muted hover:text-clinic sm:inline"
-            >
-              Todas las demos
-            </Link>
-            <a
-              href="#inicio"
-              className="display truncate text-[1.15rem] tracking-[0.06em] text-clinic-ink sm:text-[1.3rem]"
-            >
-              {clinic.shortName}
-            </a>
-          </div>
+          <a
+            href="#inicio"
+            className="display text-[1.15rem] tracking-[0.06em] text-clinic-ink sm:text-[1.3rem]"
+          >
+            {clinic.shortName}
+          </a>
 
           <nav aria-label="Navegación principal" className="hidden items-center gap-6 lg:flex">
             {clinic.nav.map((link) => (
