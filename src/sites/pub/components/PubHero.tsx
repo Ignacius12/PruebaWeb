@@ -26,8 +26,8 @@ export function PubHero() {
       />
       <div className="absolute inset-0 bg-pub-bg/30 md:bg-transparent lg:bg-pub-bg/20" aria-hidden />
 
-      <div className="pub-container relative flex min-h-[min(100svh,54rem)] items-center py-10 md:py-12 lg:min-h-svh lg:justify-center lg:pb-24 lg:pt-16">
-        <div className="w-full max-w-xl -translate-y-4 border-l-4 border-pub pl-5 text-left md:-translate-y-6 md:pl-7 lg:max-w-4xl lg:-translate-y-10 lg:border-l-0 lg:pl-0 lg:text-center xl:max-w-5xl">
+      <div className="pub-container relative flex min-h-[min(100svh,54rem)] items-center py-10 md:py-12 lg:min-h-svh lg:items-start lg:justify-start lg:pb-16 lg:pt-[18vh]">
+        <div className="w-full max-w-xl -translate-y-4 border-l-4 border-pub pl-5 text-left md:-translate-y-6 md:pl-7 lg:mx-auto lg:max-w-4xl lg:translate-y-0 lg:border-l-0 lg:pl-0 lg:text-center xl:max-w-5xl">
           <p className="pub-eyebrow lg:text-sm lg:tracking-[0.22em]">Pub · Malasaña</p>
           <h1 id="pub-hero-heading" className="mt-2 lg:mt-3">
             <span className="block font-sans text-[2.4rem] font-bold leading-none tracking-tight text-pub sm:text-[3rem] md:text-[3.4rem] lg:text-[4.5rem] xl:text-[5.25rem]">
@@ -53,19 +53,19 @@ export function PubHero() {
               Ver carta
             </Button>
           </div>
+
+          <a
+            href="#ambiente"
+            className="scroll-hint mt-6 hidden flex-col items-center gap-0.5 text-pub-cream/70 transition-colors hover:text-pub lg:mt-7 lg:inline-flex"
+            aria-label="Ver más contenido"
+          >
+            <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em]">
+              Descubre
+            </span>
+            <ChevronDown size={22} strokeWidth={1.5} className="scroll-hint-icon" aria-hidden />
+          </a>
         </div>
       </div>
-
-      <a
-        href="#ambiente"
-        className="scroll-hint absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-pub-cream/70 transition-colors hover:text-pub lg:flex"
-        aria-label="Ver más contenido"
-      >
-        <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em]">
-          Descubre
-        </span>
-        <ChevronDown size={22} strokeWidth={1.5} className="scroll-hint-icon" aria-hidden />
-      </a>
     </section>
   )
 }

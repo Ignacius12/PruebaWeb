@@ -26,8 +26,8 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-ink/25" aria-hidden="true" />
 
-      <div className="container-page relative flex min-h-[min(100svh,52rem)] flex-col justify-center py-10 md:py-12 lg:min-h-svh lg:items-center lg:justify-center lg:pb-24 lg:pt-16">
-        <div className="w-full max-w-2xl -translate-y-6 text-left text-white md:-translate-y-10 lg:max-w-5xl lg:-translate-y-10 lg:text-center">
+      <div className="container-page relative flex min-h-[min(100svh,52rem)] flex-col justify-center py-10 md:py-12 lg:min-h-svh lg:items-center lg:justify-start lg:pb-16 lg:pt-[18vh]">
+        <div className="w-full max-w-2xl -translate-y-6 text-left text-white md:-translate-y-10 lg:max-w-5xl lg:translate-y-0 lg:text-center">
           <h1 id="hero-heading" className="fade-up">
             <span className="display block text-[2rem] tracking-[0.12em] text-white sm:text-[2.4rem] md:text-[2.75rem] lg:text-[3.75rem] xl:text-[4.25rem]">
               {shortName}
@@ -54,7 +54,18 @@ export function Hero() {
             </Button>
           </div>
 
-          <ul className="fade-up delay-3 mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-white/75 lg:mt-9 lg:justify-center lg:text-base">
+          <a
+            href="#nosotros"
+            className="scroll-hint fade-up delay-3 mt-6 hidden flex-col items-center gap-0.5 text-white/70 transition-colors hover:text-white lg:mt-7 lg:inline-flex"
+            aria-label="Ver más contenido"
+          >
+            <span className="text-[0.65rem] font-medium uppercase tracking-[0.2em]">
+              Descubre
+            </span>
+            <ChevronDown size={22} strokeWidth={1.5} className="scroll-hint-icon" aria-hidden />
+          </a>
+
+          <ul className="fade-up delay-3 mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-white/75 lg:mt-8 lg:justify-center lg:text-base">
             {hero.meta.map((item, index) => (
               <li key={item} className="flex items-center gap-3">
                 {index > 0 ? (
@@ -68,17 +79,6 @@ export function Hero() {
           </ul>
         </div>
       </div>
-
-      <a
-        href="#nosotros"
-        className="scroll-hint absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-white/70 transition-colors hover:text-white lg:flex"
-        aria-label="Ver más contenido"
-      >
-        <span className="text-[0.65rem] font-medium uppercase tracking-[0.2em]">
-          Descubre
-        </span>
-        <ChevronDown size={22} strokeWidth={1.5} className="scroll-hint-icon" aria-hidden />
-      </a>
     </section>
   )
 }
