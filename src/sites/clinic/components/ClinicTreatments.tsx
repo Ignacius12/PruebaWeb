@@ -48,10 +48,10 @@ export function ClinicTreatments() {
               key={item.id}
               className="border border-clinic-line bg-clinic-ice/70 px-5 py-6 transition-colors hover:border-clinic/40 lg:px-6 lg:py-8"
             >
-              <h3 className="text-[1.05rem] font-medium text-clinic-ink lg:text-lg">
+              <h3 className="display text-[1.35rem] leading-tight text-clinic-ink md:text-[1.45rem] lg:text-[1.65rem] xl:text-[1.75rem]">
                 {item.name}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-clinic-ink-soft lg:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-clinic-muted lg:mt-3.5 lg:text-base">
                 {item.description}
               </p>
             </li>
