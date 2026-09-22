@@ -11,6 +11,10 @@ const aboutBlocks = [
     heading: 'Mesa sin prisa',
     body: 'Si buscas una cena especial sin teatralidad —solo producto bueno y ritmo pausado— esta es tu mesa.',
   },
+  {
+    heading: 'Sobremesa cuidada',
+    body: 'Reservamos con calma, servimos sin prisa y cuidamos cada detalle para que la sobremesa sea tan buena como el plato.',
+  },
 ] as const
 
 export function About() {
@@ -37,20 +41,18 @@ export function About() {
 
         <div className="mt-10 grid items-center gap-10 md:mt-14 md:grid-cols-12 md:gap-14 lg:mt-12 lg:items-stretch lg:gap-16">
           <div className="flex flex-col justify-center md:col-span-7 md:order-1 lg:py-2">
-            {/* Mobile: plain paragraphs */}
-            <div className="space-y-4 text-base leading-relaxed text-ink-soft md:text-lg lg:hidden">
+            <div className="space-y-5 text-lg leading-relaxed text-ink-soft md:text-xl lg:hidden">
               {about.body.map((paragraph) => (
                 <p key={paragraph.slice(0, 24)}>{paragraph}</p>
               ))}
             </div>
-            {/* Desktop: taller editorial blocks */}
-            <div className="hidden lg:flex lg:flex-col lg:justify-center lg:gap-10 xl:gap-12">
+            <div className="hidden lg:flex lg:flex-col lg:justify-center lg:gap-9 xl:gap-11">
               {aboutBlocks.map((block) => (
                 <div key={block.heading}>
-                  <h3 className="display text-[1.65rem] leading-tight text-ink xl:text-[1.85rem]">
+                  <h3 className="text-[0.8rem] font-medium uppercase tracking-[0.16em] text-olive xl:text-[0.85rem]">
                     {block.heading}
                   </h3>
-                  <p className="mt-3 max-w-xl text-lg leading-relaxed text-ink-soft xl:text-xl xl:leading-relaxed">
+                  <p className="mt-2.5 max-w-xl text-xl leading-relaxed text-ink-soft xl:text-[1.35rem] xl:leading-relaxed">
                     {block.body}
                   </p>
                 </div>

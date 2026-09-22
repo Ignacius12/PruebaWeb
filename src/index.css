@@ -288,3 +288,25 @@
     transform: translateY(0);
   }
 }
+
+@keyframes scroll-hint {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
+
+.scroll-hint-icon {
+  animation: scroll-hint 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hint-icon {
+    animation: none;
+  }
+}

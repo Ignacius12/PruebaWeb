@@ -10,6 +10,10 @@ const aboutBlocks = [
     heading: 'Sin atajos',
     body: 'Sin atajos: fermentación larga, harina seleccionada y mostrador que se vacía según sale la hornada.',
   },
+  {
+    heading: 'Encargos con tiempo',
+    body: 'Encargos con un día de antelación para fiestas, mesas grandes y el pan del domingo que no puede faltar.',
+  },
 ] as const
 
 export function BakeryAbout() {
@@ -38,21 +42,20 @@ export function BakeryAbout() {
           </h2>
         </div>
 
-        {/* Desktop: text left / photo right (like clinic). Mobile: photo then text. */}
         <div className="mt-10 grid items-center gap-10 md:mt-14 md:grid-cols-12 md:gap-14 lg:mt-12 lg:items-stretch lg:gap-16">
           <div className="order-2 flex flex-col justify-center md:order-1 md:col-span-7 lg:py-2">
-            <div className="space-y-4 text-base leading-relaxed text-bakery-ink-soft md:text-lg lg:hidden">
+            <div className="space-y-5 text-lg leading-relaxed text-bakery-ink-soft md:text-xl lg:hidden">
               {about.body.map((p) => (
                 <p key={p.slice(0, 28)}>{p}</p>
               ))}
             </div>
-            <div className="hidden lg:flex lg:flex-col lg:justify-center lg:gap-10 xl:gap-12">
+            <div className="hidden lg:flex lg:flex-col lg:justify-center lg:gap-9 xl:gap-11">
               {aboutBlocks.map((block) => (
                 <div key={block.heading}>
-                  <h3 className="display text-[1.65rem] leading-tight text-bakery-ink xl:text-[1.85rem]">
+                  <h3 className="text-[0.8rem] font-medium uppercase tracking-[0.16em] text-bakery xl:text-[0.85rem]">
                     {block.heading}
                   </h3>
-                  <p className="mt-3 max-w-xl text-lg leading-relaxed text-bakery-ink-soft xl:text-xl xl:leading-relaxed">
+                  <p className="mt-2.5 max-w-xl text-xl leading-relaxed text-bakery-ink-soft xl:text-[1.35rem] xl:leading-relaxed">
                     {block.body}
                   </p>
                 </div>

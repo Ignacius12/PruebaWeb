@@ -102,6 +102,7 @@ export const bakery: BakeryConfig = {
     body: [
       'Si pasas de camino al trabajo o bajas a por el pan del fin de semana, aquí encuentras corteza crujiente y miga con memoria.',
       'Sin atajos: fermentación larga, harina seleccionada y mostrador que se vacía según sale la hornada.',
+      'Encargos con un día de antelación para fiestas, mesas grandes y el pan del domingo que no puede faltar.',
     ],
     image: {
       src: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1200&q=80&auto=format&fit=crop',

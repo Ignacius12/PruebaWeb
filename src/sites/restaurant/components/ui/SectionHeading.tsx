@@ -26,7 +26,7 @@ export function SectionHeading({
   return (
     <div className={`max-w-2xl ${alignClass} ${className}`.trim()}>
       {eyebrow ? (
-        <p className="eyebrow mb-3 lg:mb-4 lg:text-sm lg:tracking-[0.18em]">
+        <p className="eyebrow mb-2 lg:mb-2.5 lg:text-sm lg:tracking-[0.18em]">
           {eyebrow}
         </p>
       ) : null}

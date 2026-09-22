@@ -100,6 +100,7 @@ export const clinic: ClinicConfig = {
     body: [
       'Sabemos que ir al dentista no siempre es fácil. Por eso empezamos escuchando, explicamos sin tecnicismos y avanzamos a tu ritmo.',
       'Protocolos actuales, materiales de calidad y un entorno luminoso pensado para bajar la tensión desde que entras.',
+      'En cada visita priorizamos claridad: tiempos, opciones y cuidados que puedes entender antes de decidir.',
     ],
     image: {
       src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80&auto=format&fit=crop',

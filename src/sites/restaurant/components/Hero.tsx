@@ -1,3 +1,4 @@
+import { ChevronDown } from 'lucide-react'
 import { restaurant } from '../config/restaurant'
 import { Button } from './ui/Button'
 
@@ -25,21 +26,21 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-ink/25" aria-hidden="true" />
 
-      <div className="container-page relative flex min-h-[min(100svh,52rem)] flex-col justify-center py-12 md:py-16 lg:min-h-svh lg:items-center lg:justify-center lg:py-20">
-        <div className="w-full max-w-2xl -translate-y-4 text-left text-white md:-translate-y-8 lg:max-w-5xl lg:translate-y-0 lg:text-center">
+      <div className="container-page relative flex min-h-[min(100svh,52rem)] flex-col justify-center py-10 md:py-12 lg:min-h-svh lg:items-center lg:justify-center lg:pb-24 lg:pt-16">
+        <div className="w-full max-w-2xl -translate-y-6 text-left text-white md:-translate-y-10 lg:max-w-5xl lg:-translate-y-10 lg:text-center">
           <h1 id="hero-heading" className="fade-up">
             <span className="display block text-[2rem] tracking-[0.12em] text-white sm:text-[2.4rem] md:text-[2.75rem] lg:text-[3.75rem] xl:text-[4.25rem]">
               {shortName}
             </span>
-            <span className="display mt-4 block max-w-[18ch] text-[1.85rem] leading-[1.12] text-white/95 sm:text-[2.35rem] md:mt-5 md:text-[2.85rem] lg:mx-auto lg:mt-6 lg:max-w-[18ch] lg:text-[3.75rem] xl:text-[4.25rem]">
+            <span className="display mt-2 block max-w-[18ch] text-[1.85rem] leading-[1.12] text-white/95 sm:text-[2.35rem] md:mt-3 md:text-[2.85rem] lg:mx-auto lg:mt-3 lg:max-w-[18ch] lg:text-[3.75rem] xl:text-[4.25rem]">
               {hero.title}
             </span>
           </h1>
-          <p className="fade-up delay-1 mt-4 max-w-xl text-base text-white/85 md:text-lg lg:mx-auto lg:mt-6 lg:max-w-2xl lg:text-xl xl:text-[1.35rem]">
+          <p className="fade-up delay-1 mt-4 max-w-xl text-base text-white/85 md:text-lg lg:mx-auto lg:mt-5 lg:max-w-2xl lg:text-xl xl:text-[1.35rem]">
             {hero.subtitle}
           </p>
 
-          <div className="fade-up delay-2 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center lg:mt-10 lg:justify-center lg:gap-4">
+          <div className="fade-up delay-2 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center lg:mt-9 lg:justify-center lg:gap-4">
             <Button href="#reservas" size="lg" className="w-full sm:w-auto lg:min-h-14 lg:px-8 lg:text-base">
               Reservar mesa
             </Button>
@@ -53,7 +54,7 @@ export function Hero() {
             </Button>
           </div>
 
-          <ul className="fade-up delay-3 mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-white/75 lg:mt-10 lg:justify-center lg:text-base">
+          <ul className="fade-up delay-3 mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-white/75 lg:mt-9 lg:justify-center lg:text-base">
             {hero.meta.map((item, index) => (
               <li key={item} className="flex items-center gap-3">
                 {index > 0 ? (
@@ -67,6 +68,17 @@ export function Hero() {
           </ul>
         </div>
       </div>
+
+      <a
+        href="#nosotros"
+        className="scroll-hint absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 text-white/70 transition-colors hover:text-white lg:flex"
+        aria-label="Ver más contenido"
+      >
+        <span className="text-[0.65rem] font-medium uppercase tracking-[0.2em]">
+          Descubre
+        </span>
+        <ChevronDown size={22} strokeWidth={1.5} className="scroll-hint-icon" aria-hidden />
+      </a>
     </section>
   )
 }

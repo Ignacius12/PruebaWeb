@@ -64,6 +64,7 @@ export const restaurant: RestaurantConfig = {
     body: [
       'Cocinamos para la mesa compartida: aceite de oliva virgen, verdura de huerta, pescado del día y recetas mediterráneas con criterio de temporada.',
       'Si buscas una cena especial sin teatralidad —solo producto bueno y ritmo pausado— esta es tu mesa.',
+      'Reservamos con calma, servimos sin prisa y cuidamos cada detalle para que la sobremesa sea tan buena como el plato.',
     ],
     image: {
       src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80&auto=format&fit=crop',
