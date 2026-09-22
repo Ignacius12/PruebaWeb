@@ -25,8 +25,8 @@ export function PubHero() {
       />
       <div className="absolute inset-0 bg-pub-bg/30 md:bg-transparent" aria-hidden />
 
-      <div className="pub-container relative flex min-h-[min(100svh,54rem)] items-end pb-14 pt-28 md:items-center md:pb-20 md:pt-24">
-        <div className="max-w-xl border-l-4 border-pub pl-5 md:pl-7">
+      <div className="pub-container relative flex min-h-[min(100svh,54rem)] items-center py-12 md:py-16">
+        <div className="max-w-xl -translate-y-2 border-l-4 border-pub pl-5 md:-translate-y-4 md:pl-7">
           <p className="pub-eyebrow">Pub · Malasaña</p>
           <h1 id="pub-hero-heading" className="mt-4">
             <span className="block font-sans text-[2.4rem] font-bold leading-none tracking-tight text-pub sm:text-[3rem] md:text-[3.4rem]">
