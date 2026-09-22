@@ -4,14 +4,14 @@ export function PubGallery() {
   return (
     <section aria-labelledby="pub-gallery-heading" className="pub-section bg-pub-bg">
       <div className="pub-container">
-        <p className="pub-eyebrow">Ambiente</p>
+        <p className="pub-eyebrow lg:text-sm">Ambiente</p>
         <h2
           id="pub-gallery-heading"
-          className="mt-3 font-sans text-[2rem] font-bold text-pub-cream md:text-[2.5rem]"
+          className="mt-3 font-sans text-[2rem] font-bold text-pub-cream md:text-[2.5rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]"
         >
           Así se siente El Candil.
         </h2>
-        <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+        <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:mt-14 lg:gap-5">
           {pub.gallery.map((image, index) => (
             <img
               key={image.id}

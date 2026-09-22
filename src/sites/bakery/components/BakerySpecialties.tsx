@@ -7,7 +7,7 @@ export function BakerySpecialties() {
         <p className="bakery-eyebrow">Para encargar</p>
         <h2
           id="specialties-heading"
-          className="display mt-3 max-w-2xl text-[2rem] text-bakery-ink md:text-[2.6rem]"
+          className="display mt-3 max-w-2xl text-[2rem] text-bakery-ink md:text-[2.6rem] lg:mt-4 lg:max-w-4xl lg:text-[3.5rem] xl:text-[4rem]"
         >
           Cestas, fiestas y mesas bien puestas.
         </h2>

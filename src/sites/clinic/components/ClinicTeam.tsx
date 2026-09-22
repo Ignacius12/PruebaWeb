@@ -5,14 +5,14 @@ export function ClinicTeam() {
     <section id="equipo" aria-labelledby="team-heading" className="clinic-section bg-clinic-ice">
       <div className="clinic-container">
         <p className="clinic-eyebrow">Equipo</p>
-        <h2 id="team-heading" className="display mt-3 text-[2rem] text-clinic-ink md:text-[2.6rem]">
+        <h2 id="team-heading" className="display mt-3 text-[2rem] text-clinic-ink md:text-[2.6rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]">
           Profesionales que te acompañan.
         </h2>
-        <p className="mt-4 max-w-xl text-clinic-muted">
+        <p className="mt-4 max-w-xl text-clinic-muted lg:mt-5 lg:max-w-2xl lg:text-lg">
           Perfiles de ejemplo para esta demo. En un proyecto real se mostrarían datos verificados del equipo.
         </p>
 
-        <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-10">
           {clinic.team.map((member) => (
             <li key={member.id}>
               <img
@@ -24,8 +24,8 @@ export function ClinicTeam() {
                 decoding="async"
                 className="aspect-[4/5] w-full object-cover"
               />
-              <h3 className="mt-4 text-lg font-medium text-clinic-ink">{member.name}</h3>
-              <p className="mt-1 text-sm text-clinic-muted">{member.role}</p>
+              <h3 className="mt-4 text-lg font-medium text-clinic-ink lg:mt-5 lg:text-xl">{member.name}</h3>
+              <p className="mt-1 text-sm text-clinic-muted lg:text-base">{member.role}</p>
             </li>
           ))}
         </ul>

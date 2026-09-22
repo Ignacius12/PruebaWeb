@@ -179,6 +179,24 @@
     }
   }
 
+  @media (min-width: 1024px) {
+    .container-page,
+    .clinic-container,
+    .bakery-container,
+    .pub-container {
+      width: min(100% - 4rem, 90rem);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container-page,
+    .clinic-container,
+    .bakery-container,
+    .pub-container {
+      width: min(100% - 5rem, 100rem);
+    }
+  }
+
   .section-pad,
   .clinic-section,
   .bakery-section,
@@ -192,6 +210,15 @@
     .bakery-section,
     .pub-section {
       padding-block: 6.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-pad,
+    .clinic-section,
+    .bakery-section,
+    .pub-section {
+      padding-block: 7.5rem;
     }
   }
 

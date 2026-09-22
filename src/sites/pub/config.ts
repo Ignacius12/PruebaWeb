@@ -204,7 +204,7 @@ export const pub: PubConfig = {
     },
     {
       id: 'g2',
-      src: 'https://images.unsplash.com/photo-1436072032612-9691a4151939?w=900&q=80&auto=format&fit=crop',
+      src: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=900&q=80&auto=format&fit=crop',
       alt: 'Cañas de cerveza servidas en barra',
       width: 900,
       height: 1100,

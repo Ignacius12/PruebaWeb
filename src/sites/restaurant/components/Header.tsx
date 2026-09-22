@@ -24,10 +24,10 @@ export function Header() {
             : 'border-transparent bg-cream/90 backdrop-blur-sm'
         }`}
       >
-        <div className="container-page flex h-16 items-center justify-between gap-4 md:h-[4.25rem]">
+        <div className="container-page flex h-16 items-center justify-between gap-4 md:h-[4.25rem] lg:h-[5.25rem]">
           <a
             href="#inicio"
-            className="display text-[1.35rem] tracking-[0.08em] text-ink md:text-[1.5rem]"
+            className="display text-[1.35rem] tracking-[0.08em] text-ink md:text-[1.5rem] lg:text-[1.85rem]"
             aria-label={`${restaurant.name} — inicio`}
           >
             {restaurant.shortName}
@@ -35,13 +35,13 @@ export function Header() {
 
           <nav
             aria-label="Navegación principal"
-            className="hidden items-center gap-7 lg:flex"
+            className="hidden items-center gap-7 lg:flex xl:gap-10"
           >
             {restaurant.nav.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-ink-soft transition-colors hover:text-olive"
+                className="text-sm text-ink-soft transition-colors hover:text-olive lg:text-base"
               >
                 {link.label}
               </a>
@@ -49,7 +49,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="#reservas" className="px-3.5 text-sm sm:px-5">
+            <Button href="#reservas" className="px-3.5 text-sm sm:px-5 lg:min-h-12 lg:px-6 lg:text-base">
               Reservar mesa
             </Button>
 

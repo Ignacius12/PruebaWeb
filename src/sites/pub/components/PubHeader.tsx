@@ -23,20 +23,20 @@ export function PubHeader() {
             : 'border-transparent bg-pub-bg/80 backdrop-blur-sm'
         }`}
       >
-        <div className="pub-container flex h-[4.25rem] items-center justify-between gap-3 md:h-[4.75rem]">
+        <div className="pub-container flex h-[4.25rem] items-center justify-between gap-3 md:h-[4.75rem] lg:h-[5.25rem]">
           <a
             href="#inicio"
-            className="font-sans text-[1.4rem] font-bold tracking-tight text-pub-cream sm:text-[1.6rem] md:text-[1.75rem]"
+            className="font-sans text-[1.4rem] font-bold tracking-tight text-pub-cream sm:text-[1.6rem] md:text-[1.75rem] lg:text-[2rem]"
           >
             {pub.name}
           </a>
 
-          <nav aria-label="Navegación principal" className="hidden items-center gap-6 lg:flex">
+          <nav aria-label="Navegación principal" className="hidden items-center gap-8 lg:flex xl:gap-10">
             {pub.nav.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-pub-muted hover:text-pub"
+                className="text-sm font-medium text-pub-muted hover:text-pub lg:text-base"
               >
                 {link.label}
               </a>
@@ -44,7 +44,7 @@ export function PubHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="#reservas" className="px-3.5 text-sm sm:px-5">
+            <Button href="#reservas" className="px-3.5 text-sm sm:px-5 lg:min-h-12 lg:px-6 lg:text-base">
               Reservar
             </Button>
             <button

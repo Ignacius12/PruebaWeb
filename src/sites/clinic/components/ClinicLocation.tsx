@@ -11,7 +11,7 @@ export function ClinicLocation() {
       <div className="clinic-container grid gap-10 md:grid-cols-12 md:gap-14">
         <div className="md:col-span-5">
           <p className="clinic-eyebrow">Ubicación</p>
-          <h2 id="location-heading" className="display mt-3 text-[2rem] text-clinic-ink md:text-[2.6rem]">
+          <h2 id="location-heading" className="display mt-3 text-[2rem] text-clinic-ink md:text-[2.6rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]">
             {name}
           </h2>
           <p className="mt-4 flex items-start gap-2 text-clinic-ink-soft">

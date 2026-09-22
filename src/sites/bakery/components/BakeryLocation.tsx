@@ -13,7 +13,7 @@ export function BakeryLocation() {
           <p className="bakery-eyebrow">Dónde estamos</p>
           <h2
             id="bakery-location-heading"
-            className="display mt-3 text-[2rem] text-bakery-ink md:text-[2.6rem]"
+            className="display mt-3 text-[2rem] text-bakery-ink md:text-[2.6rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]"
           >
             {name}
           </h2>

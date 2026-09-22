@@ -4,7 +4,7 @@ export function ClinicAbout() {
   const { about } = clinic
   return (
     <section id="clinica" aria-labelledby="clinic-about-heading" className="clinic-section bg-clinic-ice">
-      <div className="clinic-container grid items-center gap-10 md:grid-cols-12 md:gap-14">
+      <div className="clinic-container grid items-center gap-10 md:grid-cols-12 md:gap-14 lg:gap-20">
         <div className="md:col-span-5 md:order-2">
           <img
             src={about.image.src}
@@ -18,10 +18,10 @@ export function ClinicAbout() {
         </div>
         <div className="md:col-span-7 md:order-1">
           <p className="clinic-eyebrow">La clínica</p>
-          <h2 id="clinic-about-heading" className="display mt-3 text-[2rem] text-clinic-ink md:text-[2.6rem]">
+          <h2 id="clinic-about-heading" className="display mt-3 text-[2rem] text-clinic-ink md:text-[2.6rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]">
             {about.title}
           </h2>
-          <div className="mt-6 space-y-4 text-base leading-relaxed text-clinic-ink-soft md:text-lg">
+          <div className="mt-6 space-y-4 text-base leading-relaxed text-clinic-ink-soft md:text-lg lg:mt-8 lg:space-y-5 lg:text-xl">
             {about.body.map((p) => (
               <p key={p.slice(0, 28)}>{p}</p>
             ))}

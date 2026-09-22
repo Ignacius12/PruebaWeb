@@ -23,20 +23,20 @@ export function ClinicHeader() {
             : 'border-transparent bg-clinic-ice/90 backdrop-blur-sm'
         }`}
       >
-        <div className="clinic-container flex h-[4.25rem] items-center justify-between gap-3 md:h-[4.75rem]">
+        <div className="clinic-container flex h-[4.25rem] items-center justify-between gap-3 md:h-[4.75rem] lg:h-[5.25rem]">
           <a
             href="#inicio"
-            className="font-sans text-[1.35rem] font-semibold tracking-tight text-clinic-ink sm:text-[1.55rem] md:text-[1.7rem]"
+            className="font-sans text-[1.35rem] font-semibold tracking-tight text-clinic-ink sm:text-[1.55rem] md:text-[1.7rem] lg:text-[2rem]"
           >
             {clinic.name}
           </a>
 
-          <nav aria-label="Navegación principal" className="hidden items-center gap-6 lg:flex">
+          <nav aria-label="Navegación principal" className="hidden items-center gap-6 lg:flex xl:gap-10">
             {clinic.nav.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-clinic-ink-soft hover:text-clinic"
+                className="text-sm text-clinic-ink-soft hover:text-clinic lg:text-base"
               >
                 {link.label}
               </a>
@@ -44,7 +44,7 @@ export function ClinicHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button href="#cita" className="px-3.5 text-sm sm:px-5">
+            <Button href="#cita" className="px-3.5 text-sm sm:px-5 lg:min-h-12 lg:px-6 lg:text-base">
               Pedir cita
             </Button>
             <button

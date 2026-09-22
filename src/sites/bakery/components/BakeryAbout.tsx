@@ -4,7 +4,7 @@ export function BakeryAbout() {
   const { about } = bakery
   return (
     <section id="horno" aria-labelledby="bakery-about-heading" className="bakery-section bg-bakery-flour">
-      <div className="bakery-container grid items-center gap-10 md:grid-cols-12 md:gap-14">
+      <div className="bakery-container grid items-center gap-10 md:grid-cols-12 md:gap-14 lg:gap-20">
         <div className="md:col-span-6">
           <img
             src={about.image.src}
@@ -20,11 +20,11 @@ export function BakeryAbout() {
           <p className="bakery-eyebrow">El horno</p>
           <h2
             id="bakery-about-heading"
-            className="display mt-3 text-[2rem] text-bakery-ink md:text-[2.6rem]"
+            className="display mt-3 text-[2rem] text-bakery-ink md:text-[2.6rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]"
           >
             {about.title}
           </h2>
-          <div className="mt-6 space-y-4 text-base leading-relaxed text-bakery-ink-soft md:text-lg">
+          <div className="mt-6 space-y-4 text-base leading-relaxed text-bakery-ink-soft md:text-lg lg:mt-8 lg:space-y-5 lg:text-xl">
             {about.body.map((p) => (
               <p key={p.slice(0, 28)}>{p}</p>
             ))}

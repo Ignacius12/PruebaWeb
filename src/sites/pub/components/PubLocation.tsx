@@ -10,20 +10,20 @@ export function PubLocation() {
     <section id="contacto" aria-labelledby="pub-location-heading" className="pub-section bg-pub-bg">
       <div className="pub-container grid gap-10 md:grid-cols-12 md:gap-14">
         <div className="md:col-span-5">
-          <p className="pub-eyebrow">Dónde</p>
+          <p className="pub-eyebrow lg:text-sm">Dónde</p>
           <h2
             id="pub-location-heading"
-            className="mt-3 font-sans text-[2rem] font-bold text-pub-cream md:text-[2.5rem]"
+            className="mt-3 font-sans text-[2rem] font-bold text-pub-cream md:text-[2.5rem] lg:mt-4 lg:text-[3.5rem] xl:text-[4rem]"
           >
             {name}
           </h2>
-          <p className="mt-4 flex items-start gap-2 text-pub-muted">
+          <p className="mt-4 flex items-start gap-2 text-pub-muted lg:mt-6 lg:text-lg">
             <MapPin size={18} className="mt-1 shrink-0 text-pub" aria-hidden />
             <span>{fullAddress}</span>
           </p>
           <a
             href={`tel:${phone.tel}`}
-            className="mt-3 inline-flex min-h-11 items-center font-medium text-pub hover:text-pub-deep"
+            className="mt-3 inline-flex min-h-11 items-center font-medium text-pub hover:text-pub-deep lg:text-lg"
           >
             {phone.display}
           </a>
@@ -33,7 +33,7 @@ export function PubLocation() {
               variant="secondary"
               target="_blank"
               rel="noopener noreferrer"
-              className="gap-2"
+              className="gap-2 lg:min-h-14 lg:px-8 lg:text-base"
             >
               <Navigation size={16} aria-hidden />
               Cómo llegar
