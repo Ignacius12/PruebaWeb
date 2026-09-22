@@ -7,7 +7,7 @@ const demos = [
     label: 'Restaurante',
     name: 'Casa Oliva',
     description:
-      'Web premium para un restaurante mediterráneo: menú, reservas y ubicación pensados para convertir.',
+      'Para quien reserva cena con ganas de compartir: mediterráneo, producto y mesa larga.',
     image:
       'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop',
     imageAlt: 'Mesa de restaurante con platos mediterráneos',
@@ -18,7 +18,7 @@ const demos = [
     label: 'Clínica dental',
     name: 'Clínica Alba',
     description:
-      'Web limpia y profesional para una clínica dental: tratamientos, confianza y cita por teléfono.',
+      'Para el paciente que necesita calma y claridad: primera visita sin sorpresas.',
     image:
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&auto=format&fit=crop',
     imageAlt: 'Recepción luminosa de clínica dental moderna',
@@ -29,11 +29,22 @@ const demos = [
     label: 'Horno / panadería',
     name: 'Horno La Espiga',
     description:
-      'Web tradicional y apetecible para un horno de barrio: panes del día, encargos y ubicación.',
+      'Para la compra de la mañana y el domingo: pan caliente, bollería y encargos.',
     image:
       'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80&auto=format&fit=crop',
     imageAlt: 'Panes artesanos recién horneados',
     accent: 'bakery' as const,
+  },
+  {
+    to: '/pub',
+    label: 'Pub',
+    name: 'El Candil',
+    description:
+      'Para quedar con amigos y alargar la noche: cañas, ambiente y mesas de grupo.',
+    image:
+      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&q=80&auto=format&fit=crop',
+    imageAlt: 'Interior cálido de pub con barra de madera',
+    accent: 'pub' as const,
   },
 ]
 
@@ -41,12 +52,14 @@ const accentText = {
   restaurant: 'text-[#4f5d32]',
   clinic: 'text-[#1f5c63]',
   bakery: 'text-[#6b4226]',
+  pub: 'text-[#c9852a]',
 }
 
 const accentBtn = {
   restaurant: 'bg-[#4f5d32] hover:bg-[#3d4926]',
   clinic: 'bg-[#1f5c63] hover:bg-[#17484e]',
   bakery: 'bg-[#6b4226] hover:bg-[#4a2e1a]',
+  pub: 'bg-[#c9852a] hover:bg-[#a66b1c] text-[#14110e]',
 }
 
 export function Hub() {
@@ -73,11 +86,11 @@ export function Hub() {
           Elige una web de ejemplo
         </h1>
         <p className="mt-5 max-w-xl text-base text-[#5c645e] md:text-lg">
-          Tres demos comerciales listas para enseñar a clientes. Misma base
-          técnica, estética y conversión adaptadas a cada negocio.
+          Cuatro demos con personalidad propia, pensadas para el cliente de cada
+          negocio. Misma base técnica, estética distinta.
         </p>
 
-        <div className="mt-12 grid gap-10 md:mt-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 md:mt-16 md:gap-8 lg:grid-cols-2 xl:grid-cols-4">
           {demos.map((demo) => (
             <article key={demo.to} className="group flex flex-col">
               <Link

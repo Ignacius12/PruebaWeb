@@ -29,20 +29,25 @@ export function TrustBar() {
   return (
     <section
       aria-label="Información rápida"
-      className="border-b border-line bg-cream-deep/60"
+      className="border-b border-line bg-olive/[0.06]"
     >
-      <div className="container-page grid grid-cols-2 gap-6 py-8 md:grid-cols-4 md:gap-4 md:py-10">
-        {restaurant.trust.map((item) => (
-          <div
-            key={item.id}
-            className="flex flex-col items-start gap-2 md:items-center md:text-center"
-          >
-            <TrustIcon item={item} />
-            <p className="text-sm font-medium text-ink-soft md:text-[0.95rem]">
-              {item.label}
-            </p>
-          </div>
-        ))}
+      <div className="container-page">
+        <p className="eyebrow mb-5 pt-8 text-center md:mb-6 md:pt-10">
+          Para mesas que se quedan
+        </p>
+        <div className="grid grid-cols-2 gap-6 pb-8 md:grid-cols-4 md:gap-4 md:pb-10">
+          {restaurant.trust.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col items-start gap-2 md:items-center md:text-center"
+            >
+              <TrustIcon item={item} />
+              <p className="text-sm font-medium text-ink-soft md:text-[0.95rem]">
+                {item.label}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

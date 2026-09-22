@@ -8,7 +8,7 @@ export function BakeryHero() {
     <section id="inicio" aria-labelledby="bakery-hero-heading" className="bg-bakery-flour">
       <div className="bakery-container pb-8 pt-10 md:pb-10 md:pt-14">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="bakery-eyebrow">Horno de barrio</p>
+          <p className="bakery-eyebrow">De madrugada, para el barrio</p>
           <div className="mx-auto mt-4 h-px w-16 bg-bakery-wheat" aria-hidden />
           <h1 id="bakery-hero-heading" className="mt-6">
             <span className="display block text-[2.4rem] text-bakery sm:text-[3rem] md:text-[3.5rem]">

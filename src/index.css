@@ -35,6 +35,16 @@
   --color-bakery-line: #e0d5c4;
   --color-bakery-wheat: #b08d3e;
 
+  --color-pub: #c9852a;
+  --color-pub-deep: #a66b1c;
+  --color-pub-bg: #14110e;
+  --color-pub-panel: #1f1914;
+  --color-pub-cream: #f3ebd9;
+  --color-pub-ink: #f3ebd9;
+  --color-pub-muted: #b5a68f;
+  --color-pub-line: #3a3128;
+  --color-pub-wood: #2a221c;
+
   --shadow-soft: 0 12px 40px rgb(26 25 22 / 0.08);
 }
 
@@ -71,6 +81,11 @@
   .skip-link-bakery {
     background: var(--color-bakery-flour);
     color: var(--color-bakery-ink);
+  }
+
+  .skip-link-pub {
+    background: var(--color-pub-panel);
+    color: var(--color-pub-cream);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -114,6 +129,11 @@
     color: var(--color-bakery-ink);
   }
 
+  .theme-pub ::selection {
+    background: color-mix(in oklab, var(--color-pub) 35%, transparent);
+    color: var(--color-pub-cream);
+  }
+
   .theme-restaurant :focus-visible {
     outline: 2px solid var(--color-olive);
     outline-offset: 3px;
@@ -129,6 +149,11 @@
     outline-offset: 3px;
   }
 
+  .theme-pub :focus-visible {
+    outline: 2px solid var(--color-pub);
+    outline-offset: 3px;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -139,7 +164,8 @@
 @layer components {
   .container-page,
   .clinic-container,
-  .bakery-container {
+  .bakery-container,
+  .pub-container {
     width: min(100% - 2rem, 72rem);
     margin-inline: auto;
   }
@@ -147,21 +173,24 @@
   @media (min-width: 768px) {
     .container-page,
     .clinic-container,
-    .bakery-container {
+    .bakery-container,
+    .pub-container {
       width: min(100% - 3rem, 72rem);
     }
   }
 
   .section-pad,
   .clinic-section,
-  .bakery-section {
+  .bakery-section,
+  .pub-section {
     padding-block: 4.5rem;
   }
 
   @media (min-width: 768px) {
     .section-pad,
     .clinic-section,
-    .bakery-section {
+    .bakery-section,
+    .pub-section {
       padding-block: 6.5rem;
     }
   }
@@ -195,6 +224,14 @@
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-bakery);
+  }
+
+  .pub-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-pub);
   }
 
   .fade-up {

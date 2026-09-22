@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-route
 import { Hub } from './pages/Hub'
 import { BakeryApp } from './sites/bakery/BakeryApp'
 import { ClinicApp } from './sites/clinic/ClinicApp'
+import { PubApp } from './sites/pub/PubApp'
 import { RestaurantApp } from './sites/restaurant/RestaurantApp'
 
 function ScrollToTop() {
@@ -22,6 +23,7 @@ function AppRoutes() {
         <Route path="/restaurante" element={<RestaurantApp />} />
         <Route path="/clinica" element={<ClinicApp />} />
         <Route path="/horno" element={<BakeryApp />} />
+        <Route path="/pub" element={<PubApp />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

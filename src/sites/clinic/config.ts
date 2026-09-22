@@ -85,9 +85,9 @@ export const clinic: ClinicConfig = {
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80&auto=format&fit=crop',
   },
   hero: {
-    title: 'Tu sonrisa, con calma y criterio.',
+    title: 'Tu sonrisa, con calma y sin prisa.',
     subtitle:
-      'Un espacio luminoso en el centro de Madrid para escucharte, explicarte cada paso y cuidar tu salud bucal sin prisas.',
+      'Para pacientes que quieren entender cada paso. Te explicamos opciones, tiempos y cuidados con claridad — especialmente en la primera visita.',
     image: {
       src: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80&auto=format&fit=crop',
       alt: 'Recepción e interior luminoso de una clínica dental moderna',
@@ -96,10 +96,10 @@ export const clinic: ClinicConfig = {
     },
   },
   about: {
-    title: 'Una clínica pensada para que te sientas tranquilo.',
+    title: 'Diseñada para que te sientas acompañado.',
     body: [
-      'En Clínica Alba priorizamos la claridad: te explicamos cada paso, los tiempos y las opciones sin tecnicismos innecesarios.',
-      'Trabajamos con protocolos actuales, materiales de calidad y un ritmo que respeta tu tiempo y tu comodidad.',
+      'Sabemos que ir al dentista no siempre es fácil. Por eso empezamos escuchando, explicamos sin tecnicismos y avanzamos a tu ritmo.',
+      'Protocolos actuales, materiales de calidad y un entorno luminoso pensado para bajar la tensión desde que entras.',
     ],
     image: {
       src: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80&auto=format&fit=crop',
@@ -109,9 +109,9 @@ export const clinic: ClinicConfig = {
     },
   },
   trust: [
-    { id: 'years', value: '+12', label: 'años de trayectoria' },
-    { id: 'team', value: 'Equipo', label: 'especializado y cercano' },
-    { id: 'first', value: '1ª visita', label: 'valoración clara' },
+    { id: 'years', value: '+12', label: 'años cuidando sonrisas' },
+    { id: 'team', value: 'Trato', label: 'cercano y claro' },
+    { id: 'first', value: '1ª visita', label: 'sin sorpresas' },
     { id: 'hours', value: 'L–V', label: 'horario de consulta' },
   ],
   treatments: [

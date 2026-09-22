@@ -7,9 +7,9 @@ import type { RestaurantConfig } from '../types'
 export const restaurant: RestaurantConfig = {
   name: 'Casa Oliva',
   shortName: 'CASA OLIVA',
-  tagline: 'Sabores mediterráneos, hechos para compartir.',
+  tagline: 'Mesa larga, producto de temporada, aceite de verdad.',
   description:
-    'Cocina mediterránea de producto, tradición y temporada en el corazón de Madrid.',
+    'Restaurante mediterráneo para cenas que se alargan: producto de temporada, platos para compartir y una mesa sin prisas en el centro de Madrid.',
   cuisine: 'Mediterránea',
   foundedYear: 2012,
   phone: {
@@ -48,22 +48,22 @@ export const restaurant: RestaurantConfig = {
       'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop',
   },
   hero: {
-    title: 'Sabores mediterráneos, hechos para compartir.',
+    title: 'Mesa larga, producto de temporada, aceite de verdad.',
     subtitle:
-      'Cocina mediterránea de producto, tradición y temporada en el corazón de Madrid.',
+      'Para quienes reservan con ganas de compartir: cocina mediterránea de temporada, carta viva y una mesa pensada para quedarse.',
     image: {
       src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80&auto=format&fit=crop',
       alt: 'Mesa servida con platos mediterráneos en ambiente de restaurante',
       width: 1600,
       height: 1067,
     },
-    meta: ['Madrid', 'Cocina mediterránea', 'Desde 2012'],
+    meta: ['Para compartir', 'Producto de temporada', 'Reservas recomendadas'],
   },
   about: {
     title: 'Una cocina que empieza por el producto.',
     body: [
-      'En Casa Oliva cocinamos con lo que la temporada nos trae: aceite de oliva virgen, verdura de huerta, pescado del día y recetas mediterráneas que se sienten cercanas.',
-      'Un espacio cálido en el centro de Madrid, pensado para compartir mesa sin prisas — de martes a domingo.',
+      'Cocinamos para la mesa compartida: aceite de oliva virgen, verdura de huerta, pescado del día y recetas mediterráneas con criterio de temporada.',
+      'Si buscas una cena especial sin teatralidad —solo producto bueno y ritmo pausado— esta es tu mesa.',
     ],
     image: {
       src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80&auto=format&fit=crop',
@@ -74,9 +74,9 @@ export const restaurant: RestaurantConfig = {
   },
   trust: [
     { id: 'rating', label: '4,8 en Google', icon: 'stars' },
-    { id: 'local', label: 'Producto local', icon: 'leaf' },
-    { id: 'cuisine', label: 'Cocina mediterránea', icon: 'utensils' },
-    { id: 'hours', label: 'Abierto de martes a domingo', icon: 'clock' },
+    { id: 'local', label: 'Temporada y cercanía', icon: 'leaf' },
+    { id: 'cuisine', label: 'Platos para compartir', icon: 'utensils' },
+    { id: 'hours', label: 'Cenas sin prisa', icon: 'clock' },
   ],
   nav: [
     { label: 'Inicio', href: '#inicio' },

@@ -41,15 +41,15 @@ export function ClinicHero() {
           </div>
 
           <ul className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm text-clinic-muted">
-            <li>Primera visita clara</li>
+            <li>Primera visita sin prisa</li>
             <li aria-hidden="true" className="text-clinic-line">
               |
             </li>
-            <li>Equipo cercano</li>
+            <li>Explicaciones claras</li>
             <li aria-hidden="true" className="text-clinic-line">
               |
             </li>
-            <li>Centro de Madrid</li>
+            <li>Ambiente calmado</li>
           </ul>
         </div>
 

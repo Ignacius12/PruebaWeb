@@ -57,9 +57,9 @@ export interface BakeryConfig {
 
 export const bakery: BakeryConfig = {
   name: 'Horno La Espiga',
-  tagline: 'Pan de verdad, cada mañana.',
+  tagline: 'El pan del barrio, todavía caliente.',
   description:
-    'Horno tradicional de barrio en Madrid. Amasamos despacio, horneamos cada día y vendemos pan y bollería recién hechos.',
+    'Horno de toda la vida para la compra de la mañana: barra crujiente, bollería del día y encargos para el domingo.',
   phone: {
     display: '+34 91 000 78 90',
     tel: '+34910007890',
@@ -86,22 +86,22 @@ export const bakery: BakeryConfig = {
       'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80&auto=format&fit=crop',
   },
   hero: {
-    title: 'Pan de verdad, cada mañana.',
+    title: 'El pan del barrio, todavía caliente.',
     subtitle:
-      'Masa madre, harina seleccionada y el olor del barrio al abrir la puerta. Así empieza el día en La Espiga.',
+      'Para la compra rápida de la mañana y el encargo del domingo. Amasamos despacio, abrimos temprano y vendemos lo de hoy.',
     image: {
       src: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1600&q=80&auto=format&fit=crop',
       alt: 'Panes artesanos recién horneados sobre madera',
       width: 1600,
       height: 1067,
     },
-    meta: ['Desde 1987', 'Madrid', 'Horneado cada día'],
+    meta: ['Abierto a las 7:00', 'Hornada diaria', 'Encargos de domingo'],
   },
   about: {
-    title: 'Un horno de toda la vida, con el cuidado de siempre.',
+    title: 'El mismo oficio, la misma calle.',
     body: [
-      'En La Espiga seguimos el ritmo del pan: amasado lento, fermentación larga y hornada temprana. No hay atajos ni pan de ayer disfrazado.',
-      'Ven a por la barra del día, la ensaimada del domingo o un encargo para la mesa familiar. Te esperamos con el delantal puesto.',
+      'Si pasas de camino al trabajo o bajas a por el pan del fin de semana, aquí encuentras corteza crujiente y miga con memoria.',
+      'Sin atajos: fermentación larga, harina seleccionada y mostrador que se vacía según sale la hornada.',
     ],
     image: {
       src: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1200&q=80&auto=format&fit=crop',
@@ -111,10 +111,10 @@ export const bakery: BakeryConfig = {
     },
   },
   trust: [
-    { id: 'daily', label: 'Hornada diaria' },
+    { id: 'daily', label: 'Sale de madrugada' },
     { id: 'local', label: 'Harina de cercanía' },
-    { id: 'family', label: 'Oficio familiar' },
-    { id: 'early', label: 'Abrimos a las 7:00' },
+    { id: 'family', label: 'Oficio de barrio' },
+    { id: 'early', label: 'Cola corta, pan caliente' },
   ],
   products: [
     {
