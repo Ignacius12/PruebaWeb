@@ -7,14 +7,14 @@ interface MenuItemProps {
 
 export function MenuItem({ item }: MenuItemProps) {
   return (
-    <article className="grid grid-cols-[1fr_auto] gap-x-4 gap-y-1 border-b border-line/80 py-4 first:pt-0 last:border-b-0">
-      <h3 className="text-[1.02rem] font-medium text-ink md:text-[1.08rem]">
+    <article className="grid grid-cols-[1fr_auto] gap-x-4 gap-y-1 border-b border-line/80 py-5 first:pt-0 last:border-b-0 lg:gap-x-6 lg:py-6">
+      <h3 className="text-[1.05rem] font-medium text-ink md:text-[1.12rem] lg:text-[1.2rem]">
         {item.name}
       </h3>
-      <p className="text-right text-[1.02rem] font-medium tabular-nums text-olive md:text-[1.08rem]">
+      <p className="text-right text-[1.05rem] font-medium tabular-nums text-olive md:text-[1.12rem] lg:text-[1.2rem]">
         {formatPrice(item.price)}
       </p>
-      <p className="col-span-2 max-w-xl text-sm leading-relaxed text-muted">
+      <p className="col-span-2 max-w-xl text-sm leading-relaxed text-muted lg:text-base">
         {item.description}
       </p>
     </article>

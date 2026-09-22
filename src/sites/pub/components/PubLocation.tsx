@@ -1,15 +1,26 @@
 import { MapPin, Navigation } from 'lucide-react'
 import { pub } from '../config'
 import { Button } from './Button'
+import { useInView } from '../../../hooks/useInView'
 
 export function PubLocation() {
   const { address, hours, name, phone } = pub
   const fullAddress = `${address.street}, ${address.postalCode} ${address.city}`
+  const { ref, visible } = useInView<HTMLElement>()
 
   return (
-    <section id="contacto" aria-labelledby="pub-location-heading" className="pub-section bg-pub-bg">
-      <div className="pub-container grid gap-10 md:grid-cols-12 md:gap-14">
-        <div className="md:col-span-5">
+    <section
+      id="contacto"
+      ref={ref}
+      aria-labelledby="pub-location-heading"
+      className="pub-section bg-pub-bg"
+    >
+      <div
+        className={`pub-container transition-all duration-700 ${
+          visible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+        }`}
+      >
+        <div className="mx-auto max-w-2xl text-left lg:max-w-4xl lg:text-center">
           <p className="pub-eyebrow lg:text-sm">Dónde</p>
           <h2
             id="pub-location-heading"
@@ -17,42 +28,56 @@ export function PubLocation() {
           >
             {name}
           </h2>
-          <p className="mt-4 flex items-start gap-2 text-pub-muted lg:mt-6 lg:text-lg">
-            <MapPin size={18} className="mt-1 shrink-0 text-pub" aria-hidden />
-            <span>{fullAddress}</span>
-          </p>
-          <a
-            href={`tel:${phone.tel}`}
-            className="mt-3 inline-flex min-h-11 items-center font-medium text-pub hover:text-pub-deep lg:text-lg"
-          >
-            {phone.display}
-          </a>
-          <div className="mt-8">
-            <Button
-              href={address.mapsUrl}
-              variant="secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gap-2 lg:min-h-14 lg:px-8 lg:text-base"
-            >
-              <Navigation size={16} aria-hidden />
-              Cómo llegar
-            </Button>
-          </div>
         </div>
 
-        <div className="md:col-span-7">
-          <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-pub">Horario</h3>
-          <dl className="mt-5 divide-y divide-pub-line border-y border-pub-line">
-            {hours.map((row) => (
-              <div key={row.days} className="flex items-baseline justify-between gap-4 py-3.5">
-                <dt className="text-pub-muted">{row.days}</dt>
-                <dd className="text-right font-semibold tabular-nums text-pub-cream">
-                  {row.hours}
-                </dd>
-              </div>
-            ))}
-          </dl>
+        <div className="mt-10 grid gap-10 md:mt-14 md:grid-cols-12 md:gap-14 lg:gap-20">
+          <div className="md:col-span-5">
+            <p className="flex items-start gap-2 text-pub-muted lg:text-lg">
+              <MapPin
+                size={18}
+                className="mt-1 shrink-0 text-pub"
+                aria-hidden
+              />
+              <span>{fullAddress}</span>
+            </p>
+            <a
+              href={`tel:${phone.tel}`}
+              className="mt-3 inline-flex min-h-11 items-center font-medium text-pub hover:text-pub-deep lg:text-lg"
+            >
+              {phone.display}
+            </a>
+            <div className="mt-8">
+              <Button
+                href={address.mapsUrl}
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-2 lg:min-h-14 lg:px-8 lg:text-base"
+              >
+                <Navigation size={16} aria-hidden />
+                Cómo llegar
+              </Button>
+            </div>
+          </div>
+
+          <div className="md:col-span-7">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-pub lg:text-base">
+              Horario
+            </h3>
+            <dl className="mt-5 divide-y divide-pub-line border-y border-pub-line">
+              {hours.map((row) => (
+                <div
+                  key={row.days}
+                  className="flex items-baseline justify-between gap-4 py-3.5 lg:py-4"
+                >
+                  <dt className="text-pub-muted lg:text-lg">{row.days}</dt>
+                  <dd className="text-right font-semibold tabular-nums text-pub-cream lg:text-lg">
+                    {row.hours}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </div>
     </section>
